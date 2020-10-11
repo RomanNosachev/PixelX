@@ -4,8 +4,8 @@
   "description": "Pixel Battle [2020] VKontakte",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development DEBUG=pixelbattle-2020:* forever start nodemon --exitcrash --nolazy --inspect index.js",
-    "start": "cross-env NODE_ENV=production node index.js",
+    "dev": "cross-env NODE_ENV=development DEBUG=pixelbattle-2020:* forever start -c nodemon --exitcrash index.js",
+    "start": "cross-env NODE_ENV=production forever start -c nodemon --exitcrash index.js",
     "lint": "eslint ."
   },
   "dependencies": {
